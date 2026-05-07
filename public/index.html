@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify TFG | Gestor Académico</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    
+    <div class="glass-container">
+        <aside class="sidebar">
+            <h2>Taskify TFG</h2>
+            <div class="user-section">
+                <h3>Estudiante</h3>
+                <select id="userSelect">
+                    <option value="">Selecciona Usuario</option>
+                </select>
+            </div>
+            <div class="stats">
+                <p>Tareas Activas: <span id="taskCount">0</span></p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1 id="welcomeText">Bienvenido a tu TFG</h1>
+                <p id="userEmail">Selecciona un perfil para empezar</p>
+            </header>
+
+            <section class="task-form">
+                <input type="text" id="taskInput" placeholder="Añadir nuevo hito o tarea...">
+                <button id="addTaskBtn">Añadir</button>
+            </section>
+
+            <section class="task-list-container">
+                <ul id="taskList">
+                    <!-- Las tareas se cargarán aquí -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

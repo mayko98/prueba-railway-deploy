@@ -17,7 +17,7 @@ app.get('/api/status', (req, res) => {
 });
 
 // Servir el frontend en cualquier otra ruta no definida
-app.get('*', (req, res) => {
+app.get('(.*)', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
